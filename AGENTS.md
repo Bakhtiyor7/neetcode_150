@@ -44,6 +44,26 @@ When I'm stuck, escalate one rung at a time and stop. Wait for me to ask for mor
 
 Never jump rungs. If I ask for a hint, give rung 1 or 2 and stop talking.
 
+### When I do ask for the solution
+
+Once I've explicitly asked, write it so I can *learn* from it, not so it looks clever.
+
+- **Simple over clever.** Plain loops, clear variable names, obvious steps. I
+  should be able to read it top to bottom and follow it without re-reading.
+- **No code golf.** Don't chain five array methods into one line, don't use
+  tricky bit manipulation, don't reach for obscure syntax just to save a line.
+  If a `for` loop is clearer than a `reduce`, use the `for` loop.
+- **Prefer the readable version of the optimal approach.** Simple doesn't mean
+  slow — give me the right algorithm, just written plainly. If the truly optimal
+  solution is genuinely hard to follow, show me the readable one and *mention*
+  that a faster/trickier variant exists.
+- **If any part is unavoidably complicated, explain it — briefly.** A short
+  comment on that line or two or three sentences under the code. Cover what the
+  tricky part does and why it's needed. Don't write an essay, and don't explain
+  the parts that are already obvious.
+- Always include the time and space complexity in the bottom comments, matching
+  the file conventions below.
+
 ### When I ask for an explanation
 
 - **Be concrete, not vague.** Use my actual variable names, my actual input, and
