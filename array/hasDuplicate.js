@@ -11,7 +11,7 @@ class Solution {
         return true;
       } else {
         seen.add(nums[i]);
-      } 
+      }
     }
     return false;
     // if number is in seen, return true
