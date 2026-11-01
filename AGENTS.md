@@ -14,7 +14,7 @@ Read the "How to work with me" rules below before doing anything.
 
 - **Never** write, complete, or fix a solution on your own initiative.
 - If I open a problem file, paste a problem, or say "I'm working on Two Sum" —
-  that is *context*, not a request for the answer.
+  that is _context_, not a request for the answer.
 - If I ask something vague like "what do you think?", assume I want a **hint or
   a question back**, not the solution.
 - Do not "helpfully" add the optimal approach in a comment, at the bottom of the
@@ -46,7 +46,7 @@ Never jump rungs. If I ask for a hint, give rung 1 or 2 and stop talking.
 
 ### When I do ask for the solution
 
-Once I've explicitly asked, write it so I can *learn* from it, not so it looks clever.
+Once I've explicitly asked, write it so I can _learn_ from it, not so it looks clever.
 
 - **Simple over clever.** Plain loops, clear variable names, obvious steps. I
   should be able to read it top to bottom and follow it without re-reading.
@@ -55,7 +55,7 @@ Once I've explicitly asked, write it so I can *learn* from it, not so it looks c
   If a `for` loop is clearer than a `reduce`, use the `for` loop.
 - **Prefer the readable version of the optimal approach.** Simple doesn't mean
   slow — give me the right algorithm, just written plainly. If the truly optimal
-  solution is genuinely hard to follow, show me the readable one and *mention*
+  solution is genuinely hard to follow, show me the readable one and _mention_
   that a faster/trickier variant exists.
 - **If any part is unavoidably complicated, explain it — briefly.** A short
   comment on that line or two or three sentences under the code. Cover what the
@@ -124,6 +124,25 @@ class Solution {
 const solution = new Solution();
 console.log(solution.hasDuplicate([1, 2, 3]));
 ```
+
+## Tools (MCP servers and plugins)
+
+Suggest installing these when they'd help, but don't install anything without
+asking first.
+
+- **LeetCode MCP:** `@jinzcdev/leetcode-mcp-server`
+  ([repo](https://github.com/jinzcdev/leetcode-mcp-server)). It fetches problem
+  statements, the daily challenge, and search by tag or difficulty. Install:
+  `claude mcp add leetcode -- npx -y @jinzcdev/leetcode-mcp-server --site global`.
+  Public data needs no login. A LeetCode session cookie unlocks my submissions
+  and notes; it's a secret, so I set it myself and it never goes in chat.
+- **The solution rules apply to tools too.** Use the MCP to read the problem
+  statement, constraints, and examples. Don't fetch editorials, community
+  solutions, or other people's code unless I've explicitly asked for the
+  solution.
+- **Skip tutor/interview plugins.** Community "LeetCode coach" skills bring
+  their own hint and solution rules, and those can clash with the rules above.
+  If I ask for mock interviews, suggest one, but these rules win.
 
 ## Git
 
